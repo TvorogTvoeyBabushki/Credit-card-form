@@ -1,0 +1,19 @@
+@import '/src/assets/styles/variables';
+
+.btn {
+	width: 100%;
+	max-width: 134px;
+	padding: 12px 30px;
+	background-color: $bg-field;
+	border-radius: $radius;
+
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: $white;
+
+	transition: background-color 0.3s ease-in-out;
+
+	&:hover {
+		background-color: rgba($bg-field, 0.7);
+	}
+}

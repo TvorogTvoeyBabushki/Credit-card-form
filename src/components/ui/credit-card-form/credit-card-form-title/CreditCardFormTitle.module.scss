@@ -1,0 +1,24 @@
+@import '/src/assets/styles/variables';
+
+.credit_card_form_title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	color: $gray;
+
+	> h3 {
+		margin-right: 5px;
+		text-transform: capitalize;
+	}
+
+	> svg {
+		&.validation {
+			color: $validation;
+		}
+	}
+
+	> span {
+		color: $validation;
+		margin-left: 5px;
+	}
+}

@@ -1,0 +1,23 @@
+@import '/src/assets/styles/variables';
+
+.field {
+	width: 100%;
+	max-width: 290px;
+	padding: 12px 20px;
+	border-radius: $radius;
+	border: 1px solid transparent;
+	background-color: $bg-field;
+	color: inherit;
+
+	&::placeholder {
+		color: $gray;
+	}
+
+	&:focus {
+		border-color: rgba($purple, 0.5);
+	}
+
+	&.small {
+		max-width: 134px;
+	}
+}
