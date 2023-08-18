@@ -17,6 +17,10 @@
 		border-color: rgba($purple, 0.5);
 	}
 
+	&.cardholder {
+		text-transform: capitalize;
+	}
+
 	&.small {
 		max-width: 134px;
 	}

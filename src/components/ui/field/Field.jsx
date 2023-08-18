@@ -10,7 +10,8 @@ const Field = ({ name, type, placeholder, value, onInput }) => {
 			value={value}
 			onInput={onInput}
 			className={clsx(styles.field, {
-				[styles.small]: name === 'expiration-date' || name === 'cvc'
+				[styles.small]: name === 'expiration-date' || name === 'cvc',
+				[styles.cardholder]: name === 'cardholder'
 			})}
 		/>
 	)

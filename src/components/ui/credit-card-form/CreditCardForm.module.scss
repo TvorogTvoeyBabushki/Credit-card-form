@@ -12,15 +12,31 @@
 		margin-top: 20px;
 	}
 
-	> div:first-child ~ div {
+	> div.date_cvc {
 		display: flex;
+		flex-wrap: wrap;
+
+		width: 100%;
+		max-width: 290px;
 
 		> div:first-child {
 			margin-right: 20px;
 		}
+
+		&.validation {
+			flex-wrap: wrap;
+
+			> div:first-child {
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+		}
 	}
 
-	> button {
-		margin-top: 20px;
+	> div:last-child {
+		> span {
+			color: $validation;
+			margin-left: 15px;
+		}
 	}
 }
